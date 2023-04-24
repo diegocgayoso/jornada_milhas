@@ -2,7 +2,7 @@
   background-color: black;
   color: white;
 
-  padding: 4rem;
+  padding: 3rem 4rem;
 
   display: flex;
   justify-content: space-between;
@@ -10,6 +10,7 @@
 }
 .icons-socialmedia {
   text-align: center;
+  margin-top: .5rem;
 }
 .icons-socialmedia img {
   padding: 0 .2rem;

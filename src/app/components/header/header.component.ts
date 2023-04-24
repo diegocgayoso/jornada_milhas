@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  constructor(){
+  }
 
+  login(){
+    console.log('tentaria de login');
+  }
+  signUp(){
+    console.log('tentaria de signUp');
+  }
 }

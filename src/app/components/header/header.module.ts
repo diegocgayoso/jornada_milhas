@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ButtonModule } from 'src/app/shared/components/button/button.module';
 
 @NgModule({
   declarations: [
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     CommonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ButtonModule
   ],
   exports: [
     HeaderComponent
