@@ -5,6 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
+import { BuscaModule } from './busca/busca.module';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -13,8 +15,10 @@ import { FooterModule } from './components/footer/footer.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    BuscaModule,
     HeaderModule,
-    FooterModule
+    FooterModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

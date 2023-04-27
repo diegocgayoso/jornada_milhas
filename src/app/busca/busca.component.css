@@ -1,0 +1,43 @@
+.form {
+  background: #F5F5F5;
+  max-width: 80%;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  margin: 1rem auto;
+}
+
+.idaevolta {
+  border-radius: 1.5rem;
+  width: fit-content;
+  margin: 1rem 0;
+}
+
+.idaevolta button {
+  padding: .8rem 1rem;
+  border: none;
+}
+
+.idaevolta button:nth-child(1) {
+  border: 1px solid black;
+  border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.idaevolta button:nth-child(2) {
+  border-radius: 0 1.5rem 1.5rem 0;
+  border: 1px solid black;
+  border-left: none;
+}
+
+.d-flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.pl-1 {
+  margin-left: 1rem;
+}
+
+.btn-direction {
+  background-color: #6750A4;
+}
