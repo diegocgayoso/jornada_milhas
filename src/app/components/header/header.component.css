@@ -3,8 +3,7 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  padding-inline-start: 4rem;
-  padding-inline-end: 4rem;
+  padding: 1rem  4rem;
 }
 .links-header{
   display: inline-flex;

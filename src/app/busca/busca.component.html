@@ -2,10 +2,10 @@
   <h2>Busca</h2>
   <div class="inputs">
     <div class="d-flex">
-      <mat-chip-listbox aria-label="idaevolta">
-        <mat-chip-option selected>Somente ida</mat-chip-option>
-        <mat-chip-option>Ida e volta</mat-chip-option>
-      </mat-chip-listbox>
+      <div aria-label="idaevolta">
+        <button selected>Somente ida</button>
+        <button>Ida e volta</button>
+      </div>
       <button mat-stroked-button color="primary" extended>
         1 adulto, econômica
         <mat-icon matSuffix>expand_more</mat-icon>
@@ -14,25 +14,25 @@
   </div>
   <div class="d-flex">
     <div>
-      <mat-form-field>
-        <mat-label>Origem</mat-label>
+      <div>
+        <label>Origem</label>
         <input matInput type="text">
-      </mat-form-field>
+      </div>
       <mat-icon>sync_alt</mat-icon>
-      <mat-form-field>
-        <mat-label>Destino</mat-label>
+      <div>
+        <label>Destino</label>
         <input matInput type="text">
-      </mat-form-field>
+      </div>
     </div>
     <div>
-      <mat-form-field>
-        <mat-label>Data de ida</mat-label>
+      <div>
+        <label>Data de ida</label>
         <input matInput type="date">
-      </mat-form-field>
-      <mat-form-field>
-        <mat-label>Data de volta</mat-label>
+      </div>
+      <div>
+        <label>Data de volta</label>
         <input matInput type="date">
-      </mat-form-field>
+      </div>
     </div>
 
   </div>
