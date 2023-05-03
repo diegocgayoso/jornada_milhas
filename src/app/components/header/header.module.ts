@@ -11,7 +11,8 @@ import { ButtonModule } from 'src/app/shared/components/button/button.module';
   ],
   imports: [
     CommonModule,
-    ButtonModule
+    ButtonModule,
+    MatToolbarModule
   ],
   exports: [
     HeaderComponent

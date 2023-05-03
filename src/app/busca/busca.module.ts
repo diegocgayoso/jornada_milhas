@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { BuscaComponent } from './busca.component';
 import { ButtonModule } from '../shared/components/button/button.module';
+
 import { MatIconModule } from '@angular/material/icon';
-import { PrimengModule } from '../primeng/primeng.module';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CalendarModule } from 'primeng/calendar';
+
+import { MaterialModule } from '../material.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,10 @@ import { CalendarModule } from 'primeng/calendar';
     CommonModule,
     ButtonModule,
     MatIconModule,
-    SelectButtonModule,
     FormsModule,
-    CalendarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    MaterialModule
   ],
   exports: [
     BuscaComponent

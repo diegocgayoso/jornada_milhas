@@ -4,7 +4,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-busca',
   templateUrl: './busca.component.html',
-  styleUrls: ['./busca.component.css']
+  styleUrls: ['./busca.component.scss']
 })
 export class BuscaComponent {
 
