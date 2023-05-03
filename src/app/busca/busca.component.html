@@ -1,60 +1,64 @@
-<form class="form">
-  <h2>Busca</h2>
-  <div class="inputs d-flex">
-    <div class="d-flex">
-      <div class="card flex justify-content-center">
-        <mat-button-toggle-group class="border-radius-custom" name="sentidoDaViagem" aria-label="Sentido da Viagem">
-          <mat-button-toggle mat-stroken-button value="idaEVolta" #idaEVolta checked>
-            <mat-icon class="mat-18" *ngIf="idaEVolta.checked">done</mat-icon>
-            Ida e volta
-          </mat-button-toggle>
+<div class="container">
+  <form class="form">
+    <h2>Busca</h2>
+    <div class="inputs d-flex">
+      <div class="d-flex">
+        <div class="card flex justify-content-center">
+          <mat-button-toggle-group class="border-radius-custom" name="sentidoDaViagem" aria-label="Sentido da Viagem">
+            <mat-button-toggle mat-stroken-button value="idaEVolta" #idaEVolta checked>
+              <mat-icon class="mat-18" *ngIf="idaEVolta.checked">done</mat-icon>
+              Ida e volta
+            </mat-button-toggle>
 
-          <mat-button-toggle mat-stroken-button value="somenteIda" #somenteIda>
-            <mat-icon class="mat-18" *ngIf="somenteIda.checked">done</mat-icon>
-            Somente ida
-          </mat-button-toggle>
-        </mat-button-toggle-group>
+            <mat-button-toggle mat-stroken-button value="somenteIda" #somenteIda>
+              <mat-icon class="mat-18" *ngIf="somenteIda.checked">done</mat-icon>
+              Somente ida
+            </mat-button-toggle>
+          </mat-button-toggle-group>
+        </div>
+        <button mat-stroked-button color="primary">
+          <mat-icon>expand_more</mat-icon>
+          1 adulto, econômica
+        </button>
       </div>
-      <button mat-stroked-button color="primary">
-        <mat-icon>expand_more</mat-icon>
-        1 adulto, econômica
-      </button>
     </div>
-  </div>
-  <div class="inputs d-flex">
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Origem</mat-label>
-        <input matInput type="text" name="origem">
-      </mat-form-field>
-      <button mat-fab color="primary">
-        <mat-icon>sync_alt</mat-icon>
-      </button>
-      <mat-form-field appearance="fill">
-        <mat-label>Destino</mat-label>
-        <input matInput type="text" name="destino">
-      </mat-form-field>
-    </div>
-    <div>
-      <mat-form-field appearance="fill">
-        <mat-label>Data de ida</mat-label>
-        <input matInput>
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
-      <mat-form-field appearance="fill">
-        <mat-label>Data de volta</mat-label>
-        <input matInput>
-        <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field>
+    <div class="inputs d-flex">
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Origem</mat-label>
+          <input matInput type="text" name="origem">
+        </mat-form-field>
+        <button mat-fab color="primary">
+          <mat-icon>sync_alt</mat-icon>
+        </button>
+        <mat-form-field appearance="fill">
+          <mat-label>Destino</mat-label>
+          <input matInput type="text" name="destino">
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="fill">
+          <mat-label>Data de ida</mat-label>
+          <input matInput>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Data de volta</mat-label>
+          <input matInput>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+      </div>
 
     </div>
-
-  </div>
-
-  <app-button class="d-flex-jc-center" buttonText="Nova busca" buttonType="btn-primary"></app-button>
-
-</form>
+    <app-button class="d-flex-jc-center" buttonText="Nova busca" buttonType="btn-primary"></app-button>
+  </form>
+  <aside class="aside">
+    <h3>Filtro</h3>
+    <app-paradas></app-paradas>
+  </aside>
+</div>

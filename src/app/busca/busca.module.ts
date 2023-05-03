@@ -8,10 +8,12 @@ import { ButtonModule } from '../shared/components/button/button.module';
 import { MatIconModule } from '@angular/material/icon';
 
 import { MaterialModule } from '../material.module';
+import { ParadasComponent } from './paradas/paradas.component';
 
 @NgModule({
   declarations: [
-    BuscaComponent
+    BuscaComponent,
+    ParadasComponent
   ],
   imports: [
     CommonModule,
