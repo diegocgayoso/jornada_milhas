@@ -1,15 +1,15 @@
 <form class="form">
   <h2>Busca</h2>
-  <div class="inputs">
+  <div class="inputs d-flex">
     <div class="d-flex">
       <div class="card flex justify-content-center">
         <mat-button-toggle-group class="border-radius-custom" name="sentidoDaViagem" aria-label="Sentido da Viagem">
           <mat-button-toggle mat-stroken-button value="idaEVolta" #idaEVolta checked>
-            <mat-icon class="mat-18" *ngIf="idaEVolta.checked" >done</mat-icon>
+            <mat-icon class="mat-18" *ngIf="idaEVolta.checked">done</mat-icon>
             Ida e volta
           </mat-button-toggle>
 
-          <mat-button-toggle mat-stroken-button value="somenteIda" #somenteIda >
+          <mat-button-toggle mat-stroken-button value="somenteIda" #somenteIda>
             <mat-icon class="mat-18" *ngIf="somenteIda.checked">done</mat-icon>
             Somente ida
           </mat-button-toggle>
@@ -21,7 +21,7 @@
       </button>
     </div>
   </div>
-  <div class="d-flex">
+  <div class="inputs d-flex">
     <div>
       <mat-form-field appearance="fill">
         <mat-label>Origem</mat-label>
@@ -38,21 +38,23 @@
     <div>
       <mat-form-field appearance="fill">
         <mat-label>Data de ida</mat-label>
-        <input matInput >
+        <input matInput>
         <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix ></mat-datepicker-toggle>
+        <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Data de volta</mat-label>
-        <input matInput >
+        <input matInput>
         <mat-hint>MM/DD/YYYY</mat-hint>
-        <mat-datepicker-toggle matIconSuffix ></mat-datepicker-toggle>
+        <mat-datepicker-toggle matIconSuffix></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
       </mat-form-field>
 
     </div>
 
   </div>
-  <app-button buttonText="Nova busca" buttonType="btn-primary"></app-button>
+
+  <app-button class="d-flex-jc-center" buttonText="Nova busca" buttonType="btn-primary"></app-button>
+
 </form>
