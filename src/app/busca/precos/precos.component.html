@@ -1,0 +1,9 @@
+<form>
+  <p class="title">Preço</p>
+  <div class="d-flex">
+    <span>{{preco}}</span>
+    <mat-slider min="50" max="2000" step="50" value="50">
+      <input matSliderThumb [(value)]="preco">
+    </mat-slider>
+  </div>
+</form>

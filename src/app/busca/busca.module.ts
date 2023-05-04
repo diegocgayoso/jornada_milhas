@@ -9,11 +9,13 @@ import { MatIconModule } from '@angular/material/icon';
 
 import { MaterialModule } from '../material.module';
 import { ParadasComponent } from './paradas/paradas.component';
+import { PrecosComponent } from './precos/precos.component';
 
 @NgModule({
   declarations: [
     BuscaComponent,
-    ParadasComponent
+    ParadasComponent,
+    PrecosComponent
   ],
   imports: [
     CommonModule,
