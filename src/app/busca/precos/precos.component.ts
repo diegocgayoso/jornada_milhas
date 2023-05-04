@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./precos.component.scss']
 })
 export class PrecosComponent {
-  preco: number = 50;
+  max = 500;
+  min = 50;
+  showTicks = true;
+  step = 10;
+  thumbLabel = true;
+  value = 50;
 }

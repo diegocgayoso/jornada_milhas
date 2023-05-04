@@ -1,9 +1,16 @@
 <form>
-  <p class="title">Preço</p>
-  <div class="d-flex">
-    <span>{{preco}}</span>
-    <mat-slider min="50" max="2000" step="50" value="50">
-      <input matSliderThumb [(value)]="preco">
-    </mat-slider>
+  <h3>Preço</h3>
+  <div class="example-label-container">
+    <label id="example-name-label" class="example-name-label">R{{ min |currency }}</label>
+    <label class="example-value-label">R{{ max | currency }}</label>
   </div>
+  <mat-slider
+    class=""
+    [max]="max"
+    [min]="min"
+    [step]="step"
+    [discrete]="thumbLabel"
+    [showTickMarks]="showTicks">
+    <input matSliderThumb [(ngModel)]="value" name="value">
+  </mat-slider>
 </form>
